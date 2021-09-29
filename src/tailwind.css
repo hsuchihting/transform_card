@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cardBack {
+  @apply cursor-pointer;
+  background-image: url(https://cdn.hk01.com/di/media/images/dw/20201109/402473894201528320460173.jpeg/OXglr-kbvM04_6gksS3P-SxlWYsZn_N_T48RUU-PEVE?v=w1920);
+  background-position: center center;
+  background-size: cover;
+}
+
+.card {
+  @apply h-full w-full rounded-2xl shadow-xl transform;
+  backface-visibility: hidden;
+}
