@@ -5,10 +5,10 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        md: "240px",
+        md: "550px",
       },
       width: {
-        md: "160px",
+        md: "330px",
       },
     },
   },

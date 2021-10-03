@@ -609,8 +609,12 @@ video {
   --tw-shadow: 0 0 #0000;
 }
 
+.relative {
+  position: relative;
+}
+
 .h-md {
-  height: 240px;
+  height: 550px;
 }
 
 .h-full {
@@ -626,7 +630,11 @@ video {
 }
 
 .w-md {
-  width: 160px;
+  width: 330px;
+}
+
+.transform {
+  transform: var(--tw-transform);
 }
 
 .rounded-2xl {
@@ -648,9 +656,35 @@ video {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .cardBack {
@@ -661,6 +695,7 @@ video {
 }
 
 .card {
+  position: absolute;
   height: 100%;
   width: 100%;
   transform: var(--tw-transform);
@@ -669,4 +704,32 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+
+/*翻轉屬性*/
+
+.transform-style-3d {
+  transform-style:preserve-3d;
+}
+
+.transform-style-3d:active {
+  transform:rotateY(180deg);
+}
+
+.transform-rotateY-180 {
+  transform:rotateY(180deg);
+}
+
+@media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
 }
