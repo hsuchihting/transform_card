@@ -613,7 +613,7 @@ video {
   position: relative;
 }
 
-.h-md {
+.h-\[550px\] {
   height: 550px;
 }
 
@@ -629,7 +629,7 @@ video {
   width: 100%;
 }
 
-.w-md {
+.w-\[330px\] {
   width: 330px;
 }
 
